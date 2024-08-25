@@ -26,7 +26,7 @@ func BuildAMDPC() {
 	amdProcessor := processor.NewAMDProcessor()
 	wdHardDisk := harddisk.NewWDHardDisk()
 	amdPC := PC{amdProcessor, components.Ram{}, wdHardDisk}
-	time.Sleep(10 * time.Second)
+	time.Sleep(3 * time.Second)
 	amdPC.BootUp()
 	amdPC.ReadFromDisk()
 	amdPC.SaveToDisk()
